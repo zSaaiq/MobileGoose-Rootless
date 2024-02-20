@@ -3,7 +3,7 @@
 #define min(a,b) ((a<b)?a:b)
 #define PrefValue(key) ([NSUserDefaults.standardUserDefaults \
 	objectForKey:key \
-	inDomain:@"com.pixelomer.mobilegoose" \
+	inDomain:@"me.zsaaiq.mobilegoose" \
 ])
 
 @interface NSUserDefaults(Private)
