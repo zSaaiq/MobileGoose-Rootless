@@ -15,7 +15,6 @@ MobileGoose_LIBRARIES = substrate
 BUNDLE_NAME = MobileGoose
 $(BUNDLE_NAME)_INSTALL_PATH= $(wildcard *.m) $(wildcard *.mm)
 $(BUNDLE_NAME)_INSTALL_PATH = var/jb/Library/PreferenceBundles
-$(BUNDLE_NAME)_INSTALL_PATH = /Library/PreferenceBundles
 $(BUNDLE_NAME)_PRIVATE_FRAMEWORKS = Preferences
 $(BUNDLE_NAME)_CFLAGS = -fobjc-arc
 
