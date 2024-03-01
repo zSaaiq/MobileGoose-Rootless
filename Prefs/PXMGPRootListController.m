@@ -83,15 +83,31 @@ static void MobileGoose$UILabel$setText$hook(UILabel *self, SEL _cmd, NSString *
 			[self presentViewController:alert animated:YES completion:nil];
 		}
 		else {
-			UIAlertView *alert = [[UIAlertView alloc]
-				initWithTitle:@"Warning"
-				message:message
-				delegate:nil
-				cancelButtonTitle:@"OK"
-				otherButtonTitles:nil
-			];
-			[alert show];
+		    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Warning"
+		                                                                             message:message
+		                                                                      preferredStyle:UIAlertControllerStyleAlert];
+
+		    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+		                                                       style:UIAlertActionStyleDefault
+		                                                     handler:nil];
+
+		    [alertController addAction:okAction];
+
+		    UIWindow *keyWindow = nil;
+		    if (@available(iOS 13.0, *)) {
+		        for (UIWindowScene *scene in [UIApplication sharedApplication].connectedScenes) {
+		            if (scene.activationState == UISceneActivationStateForegroundActive) {
+		                keyWindow = scene.windows.firstObject;
+		                break;
+		            }
+		        }
+		    }
+
+		    UIViewController *rootViewController = keyWindow.rootViewController;
+		    [rootViewController presentViewController:alertController animated:YES completion:nil];
 		}
+
+
 		[specifier setProperty:@YES forKey:@"__didShowWarning"];
 	}
 }
@@ -119,11 +135,12 @@ static void MobileGoose$UILabel$setText$hook(UILabel *self, SEL _cmd, NSString *
 }
 
 - (void)URLButtonPerformedAction:(PSSpecifier*)specifier {
-	NSString *URLString = [specifier propertyForKey:@"url"];
-	NSURL *URL;
-	if (URLString && (URL = [NSURL URLWithString:URLString])) {
-		[UIApplication.sharedApplication openURL:URL];
-	}
+    NSString *URLString = [specifier propertyForKey:@"url"];
+    NSURL *URL;
+    if (URLString && (URL = [NSURL URLWithString:URLString])) {
+        [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
+    }
 }
+
 
 @end

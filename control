@@ -1,9 +1,9 @@
-Package: me.zsaaiq.mobilegoose
-Name: MobileGoose Rootless
+Package: com.pixelomer.mobilegoose
+Name: MobileGoose
 Depends: mobilesubstrate, preferenceloader
 Version: 2.0
-Architecture: iphoneos-arm iphoneos-arm64
-Description: An annoying goose for your iDevice updated for iOS 15 and 16
+Architecture: iphoneos-arm
+Description: An annoying goose for your Rootless iOS 15-16 iDevice
 Maintainer: zsaaiq
-Author: zsaaiq pixelomer
+Author: pixelomer, zsaaiq
 Section: Tweaks

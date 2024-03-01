@@ -230,7 +230,7 @@ static void MGHandleExitNotification(
 		NULL,
 		0
 	);
-	NSString *dir = @"/var/jb/Library/mobile/Library/Preferences/MobileGoose/Mods";
+	NSString *dir = @"var/jb/MobileGoose/Mods";
 	NSArray *mods = [NSFileManager.defaultManager
 		contentsOfDirectoryAtPath:dir
 		error:nil

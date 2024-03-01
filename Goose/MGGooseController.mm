@@ -23,7 +23,7 @@ static NSPointerArray *sharedContainers;
 - (void)loadMeme {
 	BOOL isImage = [imageContainer isKindOfClass:[MGImageContainerView class]];
 	NSString *path = [NSString
-		stringWithFormat:@"/Library/MobileGoose/%@",
+		stringWithFormat:@"var/jb/MobileGoose/%@",
 		isImage ? @"Memes" : @"Notes"
 	];
 	NSArray *files = [NSFileManager.defaultManager contentsOfDirectoryAtPath:path error:nil];
@@ -220,7 +220,7 @@ static NSPointerArray *sharedContainers;
 	CGRect frame;
 	CGFloat degrees = (CGFloat)arc4random_uniform(360);
 	do {
-		// Check if 
+		// Check if
 		frame = _gooseView.frame;
 		degrees += 10.0;
 		frame.origin.x += cos(DEG_TO_RAD(degrees)) * defaultSpeed * 5.0;

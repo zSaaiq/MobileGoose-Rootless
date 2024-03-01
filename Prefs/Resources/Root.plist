@@ -8,7 +8,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>MobileGoose Rootless</string>
+			<string>MobileGoose</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -16,7 +16,7 @@
 			<key>default</key>
 			<true/>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>Enabled</string>
 			<key>label</key>
@@ -24,7 +24,7 @@
 			<key>set</key>
 			<string>setPreferenceValue:forNotifyingSwitch:</string>
 			<key>anyNotification</key>
-			<string>me.zsaaiq.mobilegoose/PreferenceChange</string>
+			<string>com.pixelomer.mobilegoose/PreferenceChange</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -42,7 +42,7 @@
 			<key>label</key>
 			<string>Gifts</string>
 			<key>footerText</key>
-			<string>You can put images and notes inside "/Library/MobileGoose" for the goose to bring.</string>
+			<string>You can put images and notes inside "/var/jb/MobileGoose" for the goose to bring.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -50,7 +50,7 @@
 			<key>default</key>
 			<true/>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>BringImages</string>
 			<key>label</key>
@@ -62,7 +62,7 @@
 			<key>default</key>
 			<false/>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>BringNotes</string>
 			<key>label</key>
@@ -74,7 +74,7 @@
 			<key>default</key>
 			<false/>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>DisableDefaultGifts</string>
 			<key>label</key>
@@ -92,7 +92,7 @@
 			<key>cell</key>
 			<string>PSSliderCell</string>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>MaxGiftCount</string>
 			<key>default</key>
@@ -116,7 +116,7 @@
 			<key>cell</key>
 			<string>PSSliderCell</string>
 			<key>defaults</key>
-			<string>me.zsaaiq.mobilegoose</string>
+			<string>com.pixelomer.mobilegoose</string>
 			<key>key</key>
 			<string>GooseCount</string>
 			<key>requiresRespring</key>
@@ -153,6 +153,16 @@
 			<string>Credits</string>
 			<key>footerText</key>
 			<string>MobileGoose was inspired by Desktop Goose, which was made by Samperson. Thanks to him for making an interesting program like that which lead to the creation of MobileGoose.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>zSaaiq (MobileGoose Rootless)</string>
+			<key>action</key>
+			<string>URLButtonPerformedAction:</string>
+			<key>url</key>
+			<string>https://twitter.com/0x1585D65F0</string>
 		</dict>
 		<dict>
 			<key>cell</key>
