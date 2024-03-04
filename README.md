@@ -1,8 +1,12 @@
 # MobileGoose
 
-MobileGoose is an iOS tweak based on [Desktop Goose by Sam Chiet](https://samperson.itch.io/desktop-goose). It creates a goose on your screen that runs around, blocks you from typing by walking on your keyboard and brings you memes and notes.
+MobileGoose is an iOS tweak based on [Desktop Goose by Sam Chiet](https://samperson.itch.io/desktop-goose). It creates a goose on your screen that runs around, blocks you from typing by walking on your keyboard and brings you memes and notes. additionaly you can install mods too. currently there are ColorfulGoose and JoeTheGoose available on my repo: [add my repo](https://zsaaiq.github.io/jailbreakrepo/) The CC Toggle is also updated.
 
 ![Goose](Screenshot.png)
+
+## Original Developer
+[pixelomer](https://github.com/pixelomer/MobileGoose)
+
 
 ## Featured on
 
