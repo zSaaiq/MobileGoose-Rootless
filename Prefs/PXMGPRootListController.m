@@ -2,6 +2,7 @@
 #import <Preferences/PSSpecifier.h>
 #import <substrate.h>
 #import "Utilities.h"
+@import Darwin.POSIX.spawn;
 
 @interface UIView(Private)
 - (UIViewController *)_viewControllerForAncestor;
@@ -37,13 +38,10 @@ static void MobileGoose$UILabel$setText$hook(UILabel *self, SEL _cmd, NSString *
 
 	return _specifiers;
 }
-
-- (void)didRequestRespring:(PSSpecifier *)button {
-	CFNotificationCenterPostNotification(
-		CFNotificationCenterGetDarwinNotifyCenter(),
-		CFSTR("com.pixelomer.mobilegoose/Exit"),
-		NULL, NULL, YES
-	);
+- (void)respring:(id)sender {
+	pid_t pid;
+    const char* args[] = {"killall", "backboardd", NULL};
+    posix_spawn(&pid, "/var/jb/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
 }
 
 - (void)setPreferenceValue:(id)value specifier:(PSSpecifier *)specifier {

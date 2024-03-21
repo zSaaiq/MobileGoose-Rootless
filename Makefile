@@ -1,7 +1,9 @@
 THEOS_DEVICE_IP = 192.168.0.198
 INSTALL_TARGET_PROCESSES = SpringBoard
+FINALPACKAGE = 1
+PREFIX = $(THEOS)/toolchain/Xcode.xctoolchain/usr/bin/
 THEOS_PACKAGE_SCHEME=rootless
-TARGET = iphone:15.6
+export TARGET = iphone:15.6
 ARCHS = arm64 arm64e
 export TARGET ARCHS
 

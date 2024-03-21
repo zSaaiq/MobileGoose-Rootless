@@ -142,7 +142,7 @@
 			<key>label</key>
 			<string>Restart SpringBoard</string>
 			<key>action</key>
-			<string>didRequestRespring:</string>
+			<string>respring:</string>
 			<key>enabled</key>
 			<false/>
 		</dict>

@@ -7,3 +7,4 @@ Description: An annoying goose for your Rootless iOS 15-16 iDevice
 Maintainer: zsaaiq
 Author: pixelomer, zsaaiq
 Section: Tweaks
+Icon: file:///var/jb/Library/PreferenceBundles/MobileGoose.bundle/icon@3x.png
