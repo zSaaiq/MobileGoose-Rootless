@@ -7,4 +7,6 @@ Description: An annoying goose for your Rootless iOS 15-16 iDevice
 Maintainer: zsaaiq
 Author: pixelomer, zsaaiq
 Section: Tweaks
+Depiction: https://zsaaiq.github.io/jailbreakrepo/depictions/MobileGoose.html
+SileoDepiction: https://zsaaiq.github.io/jailbreakrepo/sileodepictions/MobileGoose.json
 Icon: https://zsaaiq.github.io/jailbreakrepo/images/MobileGoose.png
