@@ -8,6 +8,6 @@ Architecture: iphoneos-arm
 Depends: com.pixelomer.mobilegoose (>=2.0)
 Maintainer: zsaaiq
 Author: PixelOmer, zsaaiq
+Depiction: https://zsaaiq.github.io/jailbreakrepo/sileodepictions/mobilegoose-colorfulgoose.html
 SileoDepiction: https://zsaaiq.github.io/jailbreakrepo/sileodepictions/mobilegoose-colorfulgoose.json
-Icon: https://zsaaiq.github.io/jailbreakrepo/images/mobilegoose-colorfulgoose.png
 Icon: https://zsaaiq.github.io/jailbreakrepo/images/colorfulgoose.png
