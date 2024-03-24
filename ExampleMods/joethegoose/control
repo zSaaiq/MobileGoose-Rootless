@@ -9,5 +9,5 @@ Depends: com.pixelomer.mobilegoose (>=1.2)
 Maintainer: zsaaiq
 Author: PixelOmer, zsaaiq
 SileoDepiction: https://zsaaiq.github.io/jailbreakrepo/sileodepictions/mobilegoose-joethegoose.json
-Icon: https://zsaaiq.github.io/jailbreakrepo/images/mobilegoose-joethegoose.png
+Depiction: https://zsaaiq.github.io/jailbreakrepo/depictions/mobilegoose-joethegoose.json
 Icon: https://zsaaiq.github.io/jailbreakrepo/images/goosename.png
