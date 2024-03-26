@@ -2,6 +2,7 @@
 #import <Goose/MGGooseView.h>
 #import <Goose/MGViewController.h>
 #import <Goose/MGGooseController.h>
+#import "rootless.h"
 
 @interface MGWindow : UIWindow
 @end
@@ -229,7 +230,7 @@ static void MGHandleExitNotification(
 		NULL,
 		0
 	);
-	NSString *dir = @"/var/jb//Library/MobileGoose/Mods";
+	NSString *dir = @"/var/jb/MobileGoose/Mods";
 	NSArray *mods = [NSFileManager.defaultManager
 		contentsOfDirectoryAtPath:dir
 		error:nil

@@ -2,6 +2,7 @@
 #import <Preferences/PSSpecifier.h>
 #import <substrate.h>
 #import "Utilities.h"
+#import "rootless.h"
 @import Darwin.POSIX.spawn;
 
 @interface UIView(Private)

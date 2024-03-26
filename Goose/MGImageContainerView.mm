@@ -12,7 +12,7 @@
         if (!_failureLabel) return nil;
 
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
-        _failureLabel.text = @"Meme konnte\nnicht geladen werden";
+        _failureLabel.text = @"Meme could\nnot be loaded.";
         _failureLabel.font = [UIFont boldSystemFontOfSize:_failureLabel.font.pointSize];
         _failureLabel.textColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         _failureLabel.numberOfLines = 0;

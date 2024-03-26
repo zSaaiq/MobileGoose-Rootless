@@ -1,6 +1,7 @@
 #include "PXMGPModDetailsController.h"
 #import <Preferences/PSSpecifier.h>
 #import "Utilities.h"
+#import "rootless.h"
 
 @interface PSSpecifier(Private)
 - (instancetype)initWithName:(NSString *)identifier target:(id)target set:(SEL)set get:(SEL)get detail:(Class)detail cell:(PSCellType)cellType edit:(Class)edit;
@@ -13,8 +14,8 @@
 
 @interface NSDistributedNotificationCenter : NSNotificationCenter
 - (void)postNotificationName:(NSNotificationName)name
-	object:(NSString *)object 
-	userInfo:(NSDictionary *)userInfo 
+	object:(NSString *)object
+	userInfo:(NSDictionary *)userInfo
 	deliverImmediately:(BOOL)deliverImmediately;
 @end
 
